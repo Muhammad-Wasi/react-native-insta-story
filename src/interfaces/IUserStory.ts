@@ -1,6 +1,5 @@
 export interface IUserStory {
   id: string;
-  user_image: string;
   username: string;
   profilePic: string;
   vibes: IUserVibesItem[];
