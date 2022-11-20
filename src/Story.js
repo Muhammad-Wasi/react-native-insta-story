@@ -170,7 +170,6 @@ export const Story = (props: Props) => {
   return (
     <Fragment>
       <View style={style}>
-        {alert(`dataState: ${JSON.stringify(dataState)}`)}
         <StoryCircleListView
           handleStoryItemPress={_handleStoryItemPress}
           data={dataState}

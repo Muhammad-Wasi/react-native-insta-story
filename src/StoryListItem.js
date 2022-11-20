@@ -202,7 +202,6 @@ export const StoryListItem = (props: Props) => {
         <View style={styles.backgroundContainer}>
           {content[current].image ? (
             <>
-              {/* {alert(content[current].image)} */}
               <Image
                 onLoadEnd={() => start()}
                 source={{ uri: content[current].image }}
@@ -211,7 +210,6 @@ export const StoryListItem = (props: Props) => {
             </>
           ) : (
             <>
-              {/* {alert(content[current].video)} */}
               <Video
                 source={{ uri: content[current].video }} // Can be a URL or a local file.
                 ref={vedioRef} // Store reference

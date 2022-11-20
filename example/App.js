@@ -53,7 +53,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {alert(`createData(): ${JSON.stringify(createData()[0])}`)}
       <StatusBar style="auto" />
       <InstaStory
         data={createData()}
