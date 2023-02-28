@@ -74,7 +74,7 @@ const StoryCircleListItem = (props) => {
       >
         <Image
           style={[size, avatarImageStyle ? avatarImageStyle : {}]}
-          source={{ uri: item.profilePic }}
+          source={{ uri: item?.vibes[0]?.media?.url || item.profilePic }}
           defaultSource={Platform.OS === "ios" ? DEFAULT_AVATAR : null}
         />
       </TouchableOpacity>
